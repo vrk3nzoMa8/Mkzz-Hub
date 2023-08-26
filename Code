@@ -1,1 +1,352 @@
+-- Lib
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/thanhdat4461/OrionMoblie/main/source')))()
+-- Window
+local Window = OrionLib:MakeWindow({Name = "Mkzz Hub", IntroText = "By Mkzz", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+-- Tab
+local Tab = Window:MakeTab({
+	Name = "Main",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+-- Section
+local Section = Tab:AddSection({
+	Name = "Shiftlock"
+})
+-- Button
+Tab:AddButton({
+	Name = "Shiftlock",
+      Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Shem3d/30xmkzz/main/ok"))()
+      		print("Clicked")
+  	end    
+})
+-- Section
+local Section = Tab:AddSection({
+	Name = "Fly"
+})
+-- Button
+Tab:AddButton({
+	Name = "Fly Mobile",
+      Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Shem3d/fly/main/kk'))()
+      		print("Clicked")
+  	end    
+})
+-- Section
+local Section = Tab:AddSection({
+	Name = "Keybinds"
+})
+-- Button
+Tab:AddButton({
+	Name = "X",
+      Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/3UK2PPvr"))()
+      		print("Clicked")
+  	end    
+})
+-- Button
+Tab:AddButton({
+	Name = "Invisible (M)",
+      Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/VyeAZUVM"))()
+      		print("Clicked")
+  	end    
+})
+-- Button
+Tab:AddButton({
+	Name = "Vfly (V)",
+      Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/MWL1WvP7"))()
+      		print("Clicked")
+  	end    
+})
+-- Button
+Tab:AddButton({
+	Name = "Fly (V)",
+      Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/t75dD6L7"))()
+      		print("Clicked")
+  	end    
+})
+-- Section
+local Section = Tab:AddSection({
+	Name = "Tools"
+})
+-- Button
+Tab:AddButton({
+	Name = "TP Tool",
+      Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/mytcXKDR",true))()
+      		print("Clicked")
+  	end    
+})
+-- Button
+Tab:AddButton({
+	Name = "Btools",
+      Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/FBKJTUyw",true))()
+      		print("Clicked")
+  	end    
+})
+-- Button
+Tab:AddButton({
+	Name = "F3X",
+      Callback = function()
+loadstring(game:GetObjects("rbxassetid://6695644299")[1].Source)()
+      		print("Clicked")
+  	end    
+})
+-- Button
+Tab:AddButton({
+	Name = "Tools Giver",
+      Callback = function()
+loadstring(game:HttpGet(('https://pastefy.app/VYIAk3o1/raw'),true))()
+      		print("Clicked")
+  	end    
+})
+-- Section
+local Section = Tab:AddSection({
+	Name = "Universal Free Gamepass"
+})
+-- Button
+Tab:AddButton({
+	Name = "Universal Free Gamepass",
+      Callback = function()
+loadstring(game:HttpGet("https://gist.githubusercontent.com/dark-modz/6982de484735e730494b2d5a10fd6a2a/raw/a92563b0cd6a63683341a09f54baccea5349ed69/feGamepassV2",true))()
+      		print("Clicked")
+  	end    
+})
+-- Section
+local Section = Tab:AddSection({
+	Name = "Chat"
+})
+-- Button
+Tab:AddButton({
+	Name = "Anti Chat Logger",
+      Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Shem3d/fifidk/main/kkk"))()
+      		print("Clicked")
+  	end    
+})
+-- Button
+Tab:AddButton({
+	Name = "Chat Bypass",
+      Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/synnyyy/synergy/additional/betterbypasser", true))({
+    Method = 3,
+    Keybind = "F",
+    ShowMethodDictionary = true
+})
+      		print("Clicked")
+  	end    
+})
+-- Button
+Tab:AddButton({
+	Name = "Chat Spy",
+      Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Shem3d/chatspy/main/spy"))()
+      		print("Clicked")
+  	end    
+})
+-- Section
+local Section = Tab:AddSection({
+	Name = "Shaders"
+})
+-- Button
+Tab:AddButton({
+	Name = "Shaders",
+      Callback = function()
+loadstring(game:HttpGet(('https://pastefy.app/xXkUxA0P/raw'),true))()
+      		print("Clicked")
+  	end    
+})
+-- Button
+Tab:AddButton({
+	Name = "Chat Hax",
+      Callback = function()
+loadstring(game:HttpGet('https://pastebin.com/raw/MBpnp3yS'))()
+      		print("Clicked")
+  	end    
+})
+-- Tab
+local Tab = Window:MakeTab({
+	Name = "Admin",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+-- Button
+Tab:AddButton({
+	Name = "Infinite Yield",
+	Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+      		print("Clicked")
+  	end    
+})
+-- Button
+Tab:AddButton({
+	Name = "Nameless Admin",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source"))();
+      		print("Clicked")
+  	end    
+})
+-- Button
+Tab:AddButton({
+	Name = "Fates Admin",
+      Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))();
+      		print("Clicked")
+  	end    
+})
+-- Button
+Tab:AddButton({
+	Name = "Reviz Admin",
+      Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/Caniwq2N",true))()
+      		print("Clicked")
+  	end    
+})
+-- Button
+Tab:AddButton({
+	Name = "CMD X",
+      Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source",true))()
+      		print("Clicked")
+  	end    
+})
+-- Tab
+local Tab = Window:MakeTab({
+	Name = "Hub",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+-- Button
+Tab:AddButton({
+	Name = "666 Hub",
+      Callback = function()
+loadstring(game:HttpGet("https://gist.githubusercontent.com/dark-modz/b674f4161fe326d5af48a8d79137d940/raw/465a44b57f95a9832f97ef1a5280e5888f571c9b/666hub.txt",true))()
+      		print("Clicked")
+  	end    
+})
+-- Button
+Tab:AddButton({
+	Name = "Frozen Hub",
+      Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/FrozenScripts/frozenhubb/main/frozenhub1", true))()
+      		print("Clicked")
+  	end    
+})
+-- Tab
+local Tab = Window:MakeTab({
+	Name = "Games",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+-- Section
+local Section = Tab:AddSection({
+	Name = "MM2"
+})
+-- Button
+Tab:AddButton({
+	Name = "Eclipse Hub Premium",
+      Callback = function()
+getgenv().mainKey = "p13a8105b-5b98-46a1-bf61-65c7ff8a2a3f";
 
+local a,b,c,d,e=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,tostring,"https\58//api.eclipsehub.xyz/auth";c(a and b,"Executor not Supported")a(b({Url=e.."\?\107e\121\61"..d(mainKey),Headers={["User-Agent"]="Eclipse"}}).Body)()
+      		print("Clicked")
+  	end    
+})
+-- Button
+Tab:AddButton({
+	Name = "Lunar Hub Premium",
+      Callback = function()
+script_key="VfTMoqPAHPFChCbHTeoKwXxYZCKjVCHJ" ;
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3571b775989b50e2ae1310f9162f1db6.lua"))()
+      		print("Clicked")
+  	end    
+})
+-- Button
+Tab:AddButton({
+	Name = "Highlight Hub Premium",
+      Callback = function()
+      		print("Clicked")
+  	end    
+})
+-- Section
+local Section = Tab:AddSection({
+	Name = "Evade"
+})
+-- Button
+Tab:AddButton({
+	Name = "BINCOOD",
+      Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Infinity2346/Tect-Menu/main/Evade.txt'))()
+      		print("Clicked")
+  	end    
+})
+-- Section
+local Section = Tab:AddSection({
+	Name = "Brookhaven"
+})
+-- Button
+Tab:AddButton({
+	Name = "Ice Hub",
+      Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMael7/NewIceHub/main/Brookhaven"))()
+      		print("Clicked")
+  	end    
+})
+-- Section
+local Section = Tab:AddSection({
+	Name = "Blox Fruits"
+})
+-- Button
+Tab:AddButton({
+	Name = "Hoho Hub",
+      Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI"))()
+      		print("Clicked")
+  	end    
+})
+-- Section
+local Section = Tab:AddSection({
+	Name = "Da Hood"
+})
+-- Button
+Tab:AddButton({
+	Name = "Swage Mode",
+      Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002'))()
+      		print("Clicked")
+  	end    
+})
+-- Button
+Tab:AddButton({
+	Name = "Auto Reload",
+      Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/rbxNffvx"))()
+      		print("Clicked")
+  	end    
+})
+-- Button
+Tab:AddButton({
+	Name = "Speed Tool",
+      Callback = function()
+loadstring(game:HttpGetAsync("https://pastebin.com/raw/XiqsUXHj", true))()
+      		print("Clicked")
+  	end    
+})
+-- Tab
+local Tab = Window:MakeTab({
+	Name = "Settings",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+-- Button
+Tab:AddButton({
+	Name = "Destroy UI",
+      Callback = function()
+OrionLib:Destroy()
+      		print("Clicked")
+  	end    
+})
