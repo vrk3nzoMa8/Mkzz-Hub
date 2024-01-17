@@ -168,46 +168,6 @@ loadstring(game:HttpGet('https://pastebin.com/raw/MBpnp3yS'))()
       		print("Clicked")
   	end    
 })
--- Section
-local Section = Tab:AddSection({
-	Name = "Others"
-})
--- Button
-Tab:AddButton({
-	Name = "Stretch Res",
-	Callback = function()
-getgenv().Resolution = {
-    [".gg/scripters"] = 0.65
-}
-
-local Camera = workspace.CurrentCamera
-if getgenv().gg_scripters == nil then
-    game:GetService("RunService").RenderStepped:Connect(
-        function()
-            Camera.CFrame = Camera.CFrame * CFrame.new(0, 0, 0, 1, 0, 0, 0, getgenv().Resolution[".gg/scripters"], 0, 0, 0, 1)
-        end
-    )
-end
-getgenv().gg_scripters = "Aori0001"
-      		print("Clicked")
-  	end    
-})
--- Button
-Tab:AddButton({
-	Name = "Better Volume",
-	Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/scripthubekitten/bettervolume/main/bettervolume", true))()
-      		print("Clicked")
-  	end    
-})
--- Button
-Tab:AddButton({
-	Name = "Free Emotes",
-	Callback = function()
-loadstring(game:HttpGet("https://pastebin.com/raw/eCpipCTH"))()
-      		print("Clicked")
-  	end    
-})
 -- Tab
 local Tab = Window:MakeTab({
 	Name = "Admin",
