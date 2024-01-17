@@ -236,6 +236,15 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/FrozenScripts/frozenh
       		print("Clicked")
   	end    
 })
+
+-- Button
+Tab:AddButton({
+	Name = "Script Hub",
+      Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/scripthubekitten/SCRIPTHUBV2/main/SCRIPTHUBV2", true))()
+      		print("Clicked")
+  	end    
+})
 -- Tab
 local Tab = Window:MakeTab({
 	Name = "Games",
