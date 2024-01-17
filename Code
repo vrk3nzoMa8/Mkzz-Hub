@@ -267,8 +267,9 @@ loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3571b775989b50
 })
 -- Button
 Tab:AddButton({
-	Name = "Highlight Hub Premium",
+	Name = "Highlight Hub",
       Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatSick/HighlightMM2/main/Main"))()
       		print("Clicked")
   	end    
 })
