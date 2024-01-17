@@ -175,7 +175,7 @@ local Section = Tab:AddSection({
 -- Button
 Tab:AddButton({
 	Name = "Stretch Res",
-      Callback = function()
+	Callback = function()
 getgenv().Resolution = {
     [".gg/scripters"] = 0.65
 }
@@ -195,8 +195,16 @@ getgenv().gg_scripters = "Aori0001"
 -- Button
 Tab:AddButton({
 	Name = "Better Volume",
-      Callback = function()
+	Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/scripthubekitten/bettervolume/main/bettervolume", true))()
+      		print("Clicked")
+  	end    
+})
+-- Button
+Tab:AddButton({
+	Name = "Free Emotes",
+	Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/eCpipCTH"))()
       		print("Clicked")
   	end    
 })
@@ -289,20 +297,11 @@ local Section = Tab:AddSection({
 })
 -- Button
 Tab:AddButton({
-	Name = "Eclipse Hub Premium",
+	Name = "Eclipse Hub",
       Callback = function()
-getgenv().mainKey = "p13a8105b-5b98-46a1-bf61-65c7ff8a2a3f";
+getgenv().mainKey = "nil"
 
 local a,b,c,d,e=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,tostring,"https\58//api.eclipsehub.xyz/auth";c(a and b,"Executor not Supported")a(b({Url=e.."\?\107e\121\61"..d(mainKey),Headers={["User-Agent"]="Eclipse"}}).Body)()
-      		print("Clicked")
-  	end    
-})
--- Button
-Tab:AddButton({
-	Name = "Lunar Hub Premium",
-      Callback = function()
-script_key="VfTMoqPAHPFChCbHTeoKwXxYZCKjVCHJ" ;
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3571b775989b50e2ae1310f9162f1db6.lua"))()
       		print("Clicked")
   	end    
 })
