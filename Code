@@ -192,19 +192,6 @@ getgenv().gg_scripters = "Aori0001"
       		print("Clicked")
   	end    
 })
-
--- Section
-local Section = Tab:AddSection({
-	Name = "Better Volume"
-})
--- Button
-Tab:AddButton({
-	Name = "Better Volume",
-	Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/scripthubekitten/bettervolume/main/bettervolume", true))()
-      		print("Clicked")
-  	end    
-})
 -- Section
 local Section = Tab:AddSection({
 	Name = "Free Emotes"
@@ -308,7 +295,7 @@ local Section = Tab:AddSection({
 Tab:AddButton({
 	Name = "Lunar Hub",
       Callback = function()
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3571b775989b50e2ae1310f9162f1db6.lua"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/cafdac8cf3c413e2aba68641d6247547.lua"))()
       		print("Clicked")
   	end    
 })
