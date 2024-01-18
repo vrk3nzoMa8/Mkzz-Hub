@@ -309,6 +309,14 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatSick/HighlightMM2
 })
 -- Button
 Tab:AddButton({
+	Name = "MM2 Chams",
+      Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/kelve123/Ken_Murder_Mystery_esp/main/Ken%20Murder%20Mystery%202%20Esp'))()
+      		print("Clicked")
+  	end    
+})
+-- Button
+Tab:AddButton({
 	Name = "Coin Farm",
       Callback = function()
 loadstring(game:HttpGet("https://shz.al/ZrwhrdHKRDyFfP3TxTyyFn7F"))("https://t.me/KrutoySuslik")
