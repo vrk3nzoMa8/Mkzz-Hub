@@ -347,6 +347,15 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMael7/NewIceHub/ma
       		print("Clicked")
   	end    
 })
+
+-- Button
+Tab:AddButton({
+	Name = "Redz Hub",
+      Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/REDzHUB/main/REDzHUB"))()
+      		print("Clicked")
+  	end    
+})
 -- Section
 local Section = Tab:AddSection({
 	Name = "Blox Fruits"
