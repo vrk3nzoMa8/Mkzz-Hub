@@ -345,6 +345,26 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/Infinity2346/Tect-Men
 })
 -- Section
 local Section = Tab:AddSection({
+	Name = "Blade Ball"
+})
+-- Button
+Tab:AddButton({
+	Name = "Blade Ball",
+      Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/qxA2ETxy"))()
+      		print("Clicked")
+  	end    
+})
+-- Button
+Tab:AddButton({
+	Name = "Bedol Hub",
+      Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/nqxlOfc/Loaders/main/Blade_Ball.lua'))()
+      		print("Clicked")
+  	end    
+})
+-- Section
+local Section = Tab:AddSection({
 	Name = "Brookhaven"
 })
 -- Button
@@ -355,7 +375,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMael7/NewIceHub/ma
       		print("Clicked")
   	end    
 })
-
 -- Button
 Tab:AddButton({
 	Name = "Redz Hub",
