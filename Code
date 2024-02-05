@@ -384,9 +384,9 @@ local Section = Tab:AddSection({
 })
 -- Button
 Tab:AddButton({
-	Name = "Blade Ball",
+	Name = "Auto Spam OP",
       Callback = function()
-loadstring(game:HttpGet("https://pastebin.com/raw/qxA2ETxy"))()
+loadstring(game:HttpGet("https://pastefy.app/juHHfw07/raw"))()
       		print("Clicked")
   	end    
 })
