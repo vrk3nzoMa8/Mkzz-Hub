@@ -398,6 +398,14 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/nqxlOfc/Loaders/main/
       		print("Clicked")
   	end    
 })
+-- Button
+Tab:AddButton({
+	Name = "Redz Hub",
+      Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/BladeBall/main/eng"))()
+      		print("Clicked")
+  	end    
+})
 -- Section
 local Section = Tab:AddSection({
 	Name = "Brookhaven"
