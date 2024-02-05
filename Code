@@ -384,9 +384,9 @@ local Section = Tab:AddSection({
 })
 -- Button
 Tab:AddButton({
-	Name = "Auto Spam OP",
+	Name = "LDS Hub",
       Callback = function()
-loadstring(game:HttpGet("https://pastefy.app/juHHfw07/raw"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/limaspeedy/limaspeedy/main/HubLDS"))()
       		print("Clicked")
   	end    
 })
