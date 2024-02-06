@@ -14,9 +14,17 @@ local Section = Tab:AddSection({
 })
 -- Button
 Tab:AddButton({
-	Name = "Parts Tool",
+	Name = "Part Mover",
       Callback = function()
 loadstring(game:HttpGet(('https://pastefy.app/Vcuyg09O/raw'),true))()
+      		print("Clicked")
+  	end    
+})
+-- Button
+Tab:AddButton({
+	Name = "Telkinesis Tool",
+      Callback = function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/SAZXHUB/Control-update/main/README.md'),true))()
       		print("Clicked")
   	end    
 })
