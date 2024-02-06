@@ -439,6 +439,14 @@ end
       		print("Clicked")
   	end    
 })
+-- Button
+Tab:AddButton({
+	Name = "No Name",
+      Callback = function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/rblxscriptsnet/scripts/main/adoptmegui1'),true))()
+      		print("Clicked")
+  	end    
+})
 -- Section
 local Section = Tab:AddSection({
 	Name = "Brookhaven"
