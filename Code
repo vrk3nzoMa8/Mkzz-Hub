@@ -10,6 +10,18 @@ local Tab = Window:MakeTab({
 })
 -- Section
 local Section = Tab:AddSection({
+	Name = "Parts"
+})
+-- Button
+Tab:AddButton({
+	Name = "Parts Tool",
+      Callback = function()
+loadstring(game:HttpGet(('https://pastefy.app/Vcuyg09O/raw'),true))()
+      		print("Clicked")
+  	end    
+})
+-- Section
+local Section = Tab:AddSection({
 	Name = "Shiftlock"
 })
 -- Button
