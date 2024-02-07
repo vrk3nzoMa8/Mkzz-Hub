@@ -1,7 +1,7 @@
 -- Lib
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/thanhdat4461/OrionMoblie/main/source')))()
 -- Window
-local Window = OrionLib:MakeWindow({Name = "Mkzz Hub", IntroText = "By Mkzz", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "Shem Hub", IntroText = "Created By Shem", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 -- Tab
 local Tab = Window:MakeTab({
 	Name = "Main",
