@@ -22,7 +22,7 @@ loadstring(game:HttpGet(('https://pastefy.app/Vcuyg09O/raw'),true))()
 })
 -- Button
 Tab:AddButton({
-	Name = "Telkinesis Tool",
+	Name = "Telekinesis Tool",
       Callback = function()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/SAZXHUB/Control-update/main/README.md'),true))()
       		print("Clicked")
