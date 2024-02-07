@@ -430,12 +430,6 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/nqxlOfc/Loaders/main/
 Tab:AddButton({
 	Name = "Hold Block To Spam",
       Callback = function()
-game:GetService("StarterGui"):SetCore("SendNotification",{
-	Title = "Script By Shem",
-	Text = "Hold Block To Spam",
-	Duration = 5
-})
-
 getgenv().SpamSpeed = 5 -- 1-25
 
 if not getgenv().exeSpam then
