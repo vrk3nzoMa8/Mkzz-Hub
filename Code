@@ -430,7 +430,7 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/nqxlOfc/Loaders/main/
 Tab:AddButton({
 	Name = "Hold Block To Spam",
       Callback = function()
-getgenv().SpamSpeed = 5 -- 1-25
+getgenv().SpamSpeed = 1 -- 1-25
 
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/Hosvile/Refinement/main/MC%3ABlade%20Ball%20Spam",true))()
       		print("Clicked")
