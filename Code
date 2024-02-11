@@ -438,9 +438,9 @@ getgenv().SpamSpeed = 5 -- 1-25
 })
 -- Button
 Tab:AddButton({
-	Name = "Redz Hub",
+	Name = "FFJ1",
       Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/BladeBall/main/eng"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/main/scripts/autoparry.lua"))()
       		print("Clicked")
   	end    
 })
