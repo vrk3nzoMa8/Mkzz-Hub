@@ -386,6 +386,15 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Augustzyzx/UraniumMob
       		print("Clicked")
   	end    
 })
+-- Button
+Tab:AddButton({
+	Name = "Vector Hub",
+      Callback = function()
+_G.Mode = "Eng" 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AAwful/VectorHub/main/Loader.lua"))()
+      		print("Clicked")
+  	end    
+})
 -- Section
 local Section = Tab:AddSection({
 	Name = "MM2"
