@@ -360,6 +360,34 @@ local Tab = Window:MakeTab({
 })
 -- Section
 local Section = Tab:AddSection({
+	Name = "Blox Fruits"
+})
+-- Button
+Tab:AddButton({
+	Name = "Hoho Hub",
+      Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI"))()
+      		print("Clicked")
+  	end    
+})
+-- Button
+Tab:AddButton({
+	Name = "Redz Hub",
+      Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/BloxFruits/main/redz9999"))()
+      		print("Clicked")
+  	end    
+})
+-- Button
+Tab:AddButton({
+	Name = "Uranium Hub",
+      Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Augustzyzx/UraniumMobile/main/UraniumKak.lua"))()
+      		print("Clicked")
+  	end    
+})
+-- Section
+local Section = Tab:AddSection({
 	Name = "MM2"
 })
 -- Button
@@ -511,26 +539,6 @@ Tab:AddButton({
 	Name = "Redz Hub",
       Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/REDzHUB/main/REDzHUB"))()
-      		print("Clicked")
-  	end    
-})
--- Section
-local Section = Tab:AddSection({
-	Name = "Blox Fruits"
-})
--- Button
-Tab:AddButton({
-	Name = "Hoho Hub",
-      Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI"))()
-      		print("Clicked")
-  	end    
-})
--- Button
-Tab:AddButton({
-	Name = "Redz Hub",
-      Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/BloxFruits/main/redz9999"))()
       		print("Clicked")
   	end    
 })
