@@ -506,6 +506,14 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/
       		print("Clicked")
   	end    
 })
+-- Button
+Tab:AddButton({
+	Name = "FFJ1 Event",
+      Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/main/scripts/BladeBallEvent.lua"))()
+      		print("Clicked")
+  	end    
+})
 -- Section
 local Section = Tab:AddSection({
 	Name = "Adopt Me"
