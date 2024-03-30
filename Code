@@ -279,6 +279,14 @@ loadstring(game:HttpGet('https://pastebin.com/raw/MBpnp3yS'))()
       		print("Clicked")
   	end    
 })
+-- Button
+Tab:AddButton({
+	Name = "Chat Admin",
+      Callback = function()
+loadstring(game:HttpGet('https://paste-drop.com/raw/qpr72Gd1JY'))()
+      		print("Clicked")
+  	end    
+})
 -- Section
 local Section = Tab:AddSection({
 	Name = "Shaders"
