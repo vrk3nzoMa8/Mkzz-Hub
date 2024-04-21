@@ -542,9 +542,17 @@ local Section = Tab:AddSection({
 })
 -- Button
 Tab:AddButton({
-	Name = "Lunar Hub",
+	Name = "MM2 Nuker",
       Callback = function()
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/cafdac8cf3c413e2aba68641d6247547.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Bac0nHck/Scripts/main/Nuke%20MM2"))()
+      		print("Clicked")
+  	end    
+})
+-- Button
+Tab:AddButton({
+	Name = "R3TH PRIV",
+      Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/R3TH-PRIV/R3THPRIV/main/loader.lua'))()
       		print("Clicked")
   	end    
 })
@@ -561,14 +569,6 @@ Tab:AddButton({
 	Name = "MM2 Chams",
       Callback = function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/kelve123/Ken_Murder_Mystery_esp/main/Ken%20Murder%20Mystery%202%20Esp'))()
-      		print("Clicked")
-  	end    
-})
--- Button
-Tab:AddButton({
-	Name = "Coin Farm",
-      Callback = function()
-loadstring(game:HttpGet("https://shz.al/ZrwhrdHKRDyFfP3TxTyyFn7F"))("https://t.me/KrutoySuslik")
       		print("Clicked")
   	end    
 })
