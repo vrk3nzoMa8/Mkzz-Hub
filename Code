@@ -299,6 +299,14 @@ loadstring(game:HttpGet(('https://pastefy.app/xXkUxA0P/raw'),true))()
       		print("Clicked")
   	end    
 })
+-- Button
+Tab:AddButton({
+	Name = "RTX",
+      Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Flybobbb/robloxscripts/main/rtx.lua"))()
+      		print("Clicked")
+  	end    
+})
 -- Section
 local Section = Tab:AddSection({
 	Name = "Resolution"
