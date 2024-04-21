@@ -564,22 +564,6 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/kelve123/Ken_Murder_M
       		print("Clicked")
   	end    
 })
--- Button
-Tab:AddButton({
-	Name = MM2 Nuker",
-      Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Bac0nHck/Scripts/main/Nuke%20MM2"))()
-      		print("Clicked")
-  	end    
-})
--- Button
-Tab:AddButton({
-	Name = R3TH PRIV",
-      Callback = function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/R3TH-PRIV/R3THPRIV/main/loader.lua'))()
-      		print("Clicked")
-  	end    
-})
 -- Section
 local Section = Tab:AddSection({
 	Name = "Evade"
