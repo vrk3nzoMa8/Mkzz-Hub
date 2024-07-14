@@ -660,9 +660,9 @@ local Section = Tab:AddSection({
 })
 -- Button
 Tab:AddButton({
-	Name = "Ice Hub",
+	Name = "ReQuiYTPL",
       Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMael7/NewIceHub/main/Brookhaven"))()
+loadstring(game:HttpGet('https://gitfront.io/r/ReQiuYTPL/wFUydaK74uGx/hub/raw/ReQiuYTPLHub.lua'))()
       		print("Clicked")
   	end    
 })
