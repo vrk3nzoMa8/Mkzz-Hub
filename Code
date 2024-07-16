@@ -660,9 +660,17 @@ local Section = Tab:AddSection({
 })
 -- Button
 Tab:AddButton({
-	Name = "ReQuiYTPL",
+	Name = "Prodigy X",
       Callback = function()
 loadstring(game:HttpGet('https://gitfront.io/r/ReQiuYTPL/wFUydaK74uGx/hub/raw/ReQiuYTPLHub.lua'))()
+      		print("Clicked")
+  	end    
+})
+-- Button
+Tab:AddButton({
+	Name = "VG Hub",
+      Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
       		print("Clicked")
   	end    
 })
