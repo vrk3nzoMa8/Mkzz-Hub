@@ -552,7 +552,7 @@ local Section = Tab:AddSection({
 Tab:AddButton({
 	Name = "MM2 ESP",
       Callback = function()
-loadstring(game:HttpGet('https://pastebin.com/raw/VwjzyCf1'))()
+loadstring(game:HttpGet('https://pastebin.com/raw/g6YMskgP'))()
       		print("Clicked")
   	end    
 })
