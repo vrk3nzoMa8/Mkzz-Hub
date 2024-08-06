@@ -622,12 +622,9 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/nqxlOfc/Loaders/main/
 })
 -- Button
 Tab:AddButton({
-	Name = "Hold Block To Spam",
+	Name = "FFJ1 V3",
       Callback = function()
-getgenv().SpamSpeed = 5 -- 1-25
-
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/Hosvile/Refinement/main/MC%3ABlade%20Ball%20Spam",true))()
-      		print("Clicked")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/main/scripts/BladeBallV3.lua"))()
   	end
 })
 -- Button
