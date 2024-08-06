@@ -550,9 +550,115 @@ local Section = Tab:AddSection({
 })
 -- Button
 Tab:AddButton({
-	Name = "MM2 Nuker",
+	Name = "MM2 ESP",
       Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Bac0nHck/Scripts/main/Nuke%20MM2"))()
+local DefaultColor = Color3.fromRGB(0, 255, 0)  -- Vert par défaut
+local GunColor = Color3.fromRGB(0, 0, 255)  -- Bleu pour arme à feu
+local KnifeColor = Color3.fromRGB(255, 0, 0)  -- Rouge pour couteau
+local DepthMode = "AlwaysOnTop"
+local FillTransparency = 0.5
+local OutlineColor = Color3.fromRGB(255, 255, 255)
+local OutlineTransparency = 0
+
+local CoreGui = game:GetService("CoreGui")
+local Players = game:GetService("Players")
+local connections = {}
+
+local Storage = Instance.new("Folder")
+Storage.Parent = CoreGui
+Storage.Name = "Highlight_Storage"
+
+local function HasWeapon(plr)
+    local character = plr.Character
+    local backpack = plr:FindFirstChildOfClass("Backpack")
+    
+    local hasGun = (character and character:FindFirstChild("Gun")) or (backpack and backpack:FindFirstChild("Gun"))
+    local hasKnife = (character and character:FindFirstChild("Knife")) or (backpack and backpack:FindFirstChild("Knife"))
+    
+    return hasGun, hasKnife
+end
+
+local function UpdateHighlightColor(highlight, plr)
+    local hasGun, hasKnife = HasWeapon(plr)
+
+    if hasGun then
+        highlight.FillColor = GunColor
+    elseif hasKnife then
+        highlight.FillColor = KnifeColor
+    else
+        highlight.FillColor = DefaultColor
+    end
+end
+
+local function Highlight(plr)
+    local highlight = Instance.new("Highlight")
+    highlight.Name = plr.Name
+    highlight.FillColor = DefaultColor
+    highlight.DepthMode = DepthMode
+    highlight.FillTransparency = FillTransparency
+    highlight.OutlineColor = OutlineColor
+    highlight.OutlineTransparency = OutlineTransparency
+    highlight.Parent = Storage
+
+    local character = plr.Character
+    if character then
+        highlight.Adornee = character
+        UpdateHighlightColor(highlight, plr)
+    end
+
+    connections[plr] = plr.CharacterAdded:Connect(function(char)
+        highlight.Adornee = char
+        UpdateHighlightColor(highlight, plr)
+    end)
+
+    connections[plr.Name .. "_tool_added"] = plr.Backpack.ChildAdded:Connect(function(tool)
+        UpdateHighlightColor(highlight, plr)
+    end)
+    connections[plr.Name .. "_tool_removed"] = plr.Backpack.ChildRemoved:Connect(function(tool)
+        UpdateHighlightColor(highlight, plr)
+    end)
+    connections[plr.Name .. "_inventory_added"] = plr.Character.ChildAdded:Connect(function(child)
+        UpdateHighlightColor(highlight, plr)
+    end)
+    connections[plr.Name .. "_inventory_removed"] = plr.Character.ChildRemoved:Connect(function(child)
+        UpdateHighlightColor(highlight, plr)
+    end)
+
+    -- Check periodically to handle weapon changes after a round ends
+    connections[plr.Name .. "_periodic_check"] = game:GetService("RunService").Stepped:Connect(function()
+        UpdateHighlightColor(highlight, plr)
+    end)
+end
+
+Players.PlayerAdded:Connect(Highlight)
+for _, player in ipairs(Players:GetPlayers()) do
+    Highlight(player)
+end
+
+Players.PlayerRemoving:Connect(function(plr)
+    local plrname = plr.Name
+    if Storage:FindFirstChild(plrname) then
+        Storage[plrname]:Destroy()
+    end
+    if connections[plr] then
+        connections[plr]:Disconnect()
+    end
+    if connections[plr.Name .. "_tool_added"] then
+        connections[plr.Name .. "_tool_added"]:Disconnect()
+    end
+    if connections[plr.Name .. "_tool_removed"] then
+        connections[plr.Name .. "_tool_removed"]:Disconnect()
+    end
+    if connections[plr.Name .. "_inventory_added"] then
+        connections[plr.Name .. "_inventory_added"]:Disconnect()
+    end
+    if connections[plr.Name .. "_inventory_removed"] then
+        connections[plr.Name .. "_inventory_removed"]:Disconnect()
+    end
+    if connections[plr.Name .. "_periodic_check"] then
+        connections[plr.Name .. "_periodic_check"]:Disconnect()
+    end
+end)
       		print("Clicked")
   	end    
 })
@@ -569,14 +675,6 @@ Tab:AddButton({
 	Name = "Highlight Hub",
       Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatSick/HighlightMM2/main/Main"))()
-      		print("Clicked")
-  	end    
-})
--- Button
-Tab:AddButton({
-	Name = "MM2 Chams",
-      Callback = function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/kelve123/Ken_Murder_Mystery_esp/main/Ken%20Murder%20Mystery%202%20Esp'))()
       		print("Clicked")
   	end    
 })
