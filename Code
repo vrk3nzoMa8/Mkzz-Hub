@@ -598,9 +598,9 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/limaspeedy/limaspeedy
 })
 -- Button
 Tab:AddButton({
-	Name = "Redz Hub",
+	Name = "Pitbul Hub",
       Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/BladeBall/main/redz9999"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SoyAdriYT/PitbullHubX/main/Loader.lua", true))()
       		print("Clicked")
   	end    
 })
