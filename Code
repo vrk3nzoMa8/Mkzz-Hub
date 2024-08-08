@@ -663,6 +663,14 @@ loadstring(game:HttpGetAsync("https://pastebin.com/raw/R8QMbhzv"))()
       		print("Clicked")
   	end    
 })
+-- Button
+Tab:AddButton({
+	Name = "Chiba Hub",
+      Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Rafanchik123/script/main/DoorsNew19"))()
+      		print("Clicked")
+  	end    
+})
 -- Section
 local Section = Tab:AddSection({
 	Name = "Adopt Me"
