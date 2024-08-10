@@ -598,9 +598,9 @@ local Section = Tab:AddSection({
 })
 -- Button
 Tab:AddButton({
-	Name = "LDS Hub",
+	Name = "Astra Hub",
       Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/limaspeedy/limaspeedy/main/HubLDS"))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Augustzyzx/A-s-t-r-a-l/main/Loader_BladeBall.lua'))()
       		print("Clicked")
   	end    
 })
