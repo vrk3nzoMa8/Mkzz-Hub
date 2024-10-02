@@ -367,25 +367,13 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/FilteringEnabled/Name
 })
 -- Button
 Tab:AddButton({
-	Name = "Fates Admin",
+	Name = "Rochips Panel",
       Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))();
-      		print("Clicked")
-  	end    
-})
--- Button
-Tab:AddButton({
-	Name = "Reviz Admin",
-      Callback = function()
-loadstring(game:HttpGet("https://pastebin.com/raw/Caniwq2N",true))()
-      		print("Clicked")
-  	end    
-})
--- Button
-Tab:AddButton({
-	Name = "CMD X",
-      Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source",true))()
+if "Rochips Loader" then
+	local Rochips_panel,v,u,i=loadstring,"/snippets","gwwv","/raw/main.lua" ;
+	Rochips_panel(game:HttpGet("https://glot.io"..v.."/" ..u.."877ga3"..i))();
+	return "it will load in around 3 - 131 seconds"
+end
       		print("Clicked")
   	end    
 })
