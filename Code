@@ -377,6 +377,15 @@ end
       		print("Clicked")
   	end    
 })
+-- Button
+Tab:AddButton({
+	Name = "Rochips Universal",
+      Callback = function()
+loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-rochips-universal-18294"))()
+end
+      		print("Clicked")
+  	end    
+})
 -- Tab
 local Tab = Window:MakeTab({
 	Name = "Hub",
