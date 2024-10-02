@@ -367,13 +367,9 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/FilteringEnabled/Name
 })
 -- Button
 Tab:AddButton({
-	Name = "Rochips Panel",
+	Name = "Rochips Universal",
       Callback = function()
-if "Rochips Loader" then
-	local Rochips_panel,v,u,i=loadstring,"/snippets","gwwv","/raw/main.lua" ;
-	Rochips_panel(game:HttpGet("https://glot.io"..v.."/" ..u.."877ga3"..i))();
-	return "it will load in around 3 - 131 seconds"
-end
+loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-rochips-universal-18294"))()
       		print("Clicked")
   	end    
 })
