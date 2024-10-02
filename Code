@@ -598,7 +598,7 @@ local Section = Tab:AddSection({
 })
 -- Button
 Tab:AddButton({
-	Name = "Astra Hub",
+	Name = "Astral Hub",
       Callback = function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Augustzyzx/A-s-t-r-a-l/main/Loader_BladeBall.lua'))()
       		print("Clicked")
@@ -606,9 +606,9 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/Augustzyzx/A-s-t-r-a-
 })
 -- Button
 Tab:AddButton({
-	Name = "Pitbul Hub",
+	Name = "Plutonium Hub",
       Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/SoyAdriYT/PitbullHubX/main/Loader.lua", true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/PawsThePaw/Plutonium.AA/main/Plutonium.Loader.lua", true))()
       		print("Clicked")
   	end    
 })
