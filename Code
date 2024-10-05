@@ -584,7 +584,7 @@ local Section = Tab:AddSection({
 Tab:AddButton({
 	Name = "Astral Hub",
       Callback = function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/Augustzyzx/A-s-t-r-a-l/main/Loader_BladeBall.lua'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Augustzyzx/A-s-t-r-a-l/refs/heads/main/5025757134721177.lua.txt'))()
       		print("Clicked")
   	end    
 })
