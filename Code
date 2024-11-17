@@ -641,17 +641,17 @@ local Section = Tab:AddSection({
 })
 -- Button
 Tab:AddButton({
-	Name = "BlackKing",
+	Name = "mspaint v2",
       Callback = function()
-loadstring(game:HttpGetAsync("https://pastebin.com/raw/R8QMbhzv"))() 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/mspaint/main/main.lua"))()
       		print("Clicked")
   	end    
 })
 -- Button
 Tab:AddButton({
-	Name = "Chiba Hub",
+	Name = "BlackKing",
       Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Rafanchik123/script/main/DoorsNew19"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/KINGHUB01/BlackKing-obf/main/Doors%20Blackking%20And%20BobHub"))()
       		print("Clicked")
   	end    
 })
