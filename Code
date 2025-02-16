@@ -766,3 +766,5 @@ OrionLib:Destroy()
       		print("Clicked")
   	end    
 })
+
+OrionLib:Init()
