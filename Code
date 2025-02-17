@@ -245,6 +245,14 @@ local Section = Tab:AddSection({
 })
 -- Button
 Tab:AddButton({
+	Name = "FE Chat Verified",
+      Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/qJwH9964"))();
+      		print("Clicked")
+  	end    
+})
+-- Button
+Tab:AddButton({
 	Name = "Anti Chat Logger",
       Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Shem3d/fifidk/main/kkk"))()
